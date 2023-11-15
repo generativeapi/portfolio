@@ -29,13 +29,16 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Reveal
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .zoomed-image {
+        transition: transform 0.3s ease-in-out; /* Adding a smooth transition for the zoom effect */
+    }
+
+    .zoomed-image:hover {
+        transform: scale(1.5); /* Zoom in the image by 20% on hover */
+        cursor: zoom-in; /* Change cursor on hover to indicate the image is clickable */
+    }
+</style>
 </head>
 
 <body>
@@ -45,7 +48,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope d-flex align-items-center"><a
-          href="mailto:contact@example.com">info@generativeapis.com</a></i>
+          href="mailto:info@generativeapis.com">info@generativeapis.com</a></i>
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 6397702499</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
@@ -255,6 +258,18 @@
 
       </div>
     </section><!-- End Clients Section -->
+
+    <!-- ======= Tech stack Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg about-img">
+            <img class="zoomed-image" src="assets/img/tech_stack.JPG" alt="">
+        </div>
+        </div>
+
+      </div>
+    </section><!-- Tech stack About Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -552,7 +567,7 @@
             <div class="contact-address">
               <i class="bi bi-geo-alt"></i>
               <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
+              <address> C Block, Phase 2, Industrial Area, Sector 62, Noida, Uttar Pradesh 201309</address>
             </div>
           </div>
 
@@ -560,7 +575,7 @@
             <div class="contact-phone">
               <i class="bi bi-phone"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              <p><a href="tel:+155895548855">+91 6397702499</a></p>
             </div>
           </div>
 
@@ -568,22 +583,24 @@
             <div class="contact-email">
               <i class="bi bi-envelope"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p><a href="mailto:info@generativeapis.com">info@generativeapis.com</a></p>
             </div>
           </div>
+          
+       
 
         </div>
       </div>
-
+      <!-- https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452 -->
       <div class="container mb-4">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
+          src="https://maps.google.com/maps?q=%20C%20Block,%20Phase%202,%20Industrial%20Area,%20Sector%2062,%20Noida,%20Uttar%20Pradesh%20201309&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
           width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
       <div class="container">
         <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="https://formcarry.com/s/PbFnpPvP4F" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -591,9 +608,6 @@
               <div class="form-group col-md-6 mt-3 mt-md-0">
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
               </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
             </div>
             <div class="form-group mt-3">
               <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
