@@ -556,9 +556,7 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Contact Us</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim
-            export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export
-            irure minim illum fore</p>
+          <p>We'd love to hear from you! Whether you have questions about our software solutions, want to explore partnership opportunities, or simply want to say hello, we're here for you. Feel free to reach out through the contact information below:</p>
         </div>
 
         <div class="row contact-info">
@@ -600,31 +598,76 @@
 
       <div class="container">
         <div class="form">
-          <form action="https://formcarry.com/s/PbFnpPvP4F" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group col-md-6 mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
+          <style>
+            form {
+              max-width: 600px;
+              margin: 0 auto;
+            }
+          
+            .row {
+              display: flex;
+              justify-content: space-between;
+            }
+          
+            .form-group {
+              width: 48%; /* Adjust as needed */
+            }
+          
+            input,
+            textarea {
+              width: 100%;
+              padding: 10px 14px; /* Updated padding */
+              margin-bottom: 10px;
+              border: 1px solid #ccc;
+              border-radius: 0; /* Updated border-radius */
+              box-shadow: none; /* Updated box-shadow */
+              font-size: 15px; /* Updated font-size */
+              box-sizing: border-box;
+            }
+          
+            button {
+              background: #50d8af; /* Updated background color */
+              border: 0;
+              border-radius: 3px; /* Updated border-radius */
+              padding: 10px 30px; /* Updated padding */
+              color: #fff;
+              transition: 0.4s;
+              cursor: pointer;
+            }
+          
+            button:hover {
+              background-color: #4ac5a0; /* Adjusted hover background color */
+            }
+          </style>
+          
+          <form action="https://formcarry.com/s/PbFnpPvP4F" method="POST" enctype="multipart/form-data">
+        
+            <div class="formcarry-block">
+              <label for="fc-generated-1-name">Full Name</label>
+              <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
             </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            
+            <div class="formcarry-block">
+              <label for="fc-generated-1-email">Your Email Address</label>
+              <input type="email" name="email" id="fc-generated-1-email" placeholder="john@doe.com" />
             </div>
-
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+            
+            <div class="formcarry-block">
+              <label for="fc-generated-1-message">Your message</label>
+              <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
             </div>
-
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            
+            <div class="formcarry-block">  
+              <button type="submit">Send</button>
+            </div>
+          
           </form>
+          
         </div>
 
       </div>
     </section><!-- End Contact Section -->
+\
 
   </main><!-- End #main -->
 
